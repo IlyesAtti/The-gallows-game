@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>The gallows game</title>
+        <!-- <link rel="stylesheet" href="button.module.css"> -->
+    <body>
+        <div class="container">
+            <h1>Let's play a game... </h1>
+            <br>
+            <div class="input-group">
+                <input type="text" id = "Word" placeholder="Enter the word"/>
+                <button type="button" class="btn btn-primary" onclick="StartGame()">Start
+                </button>
+
+            </div>
+            <br>
+            <div id="Lifes-left"></div>
+            <br>
+            <div class="input-group">
+                <input type="text" id = "Character" maxlength="1" placeholder="Enter the character"/>
+                <button type="button" class="btn btn-primary" onclick="SearchChar()">Search
+                </button>
+            </div>
+            <br>
+        </div>
+        <div class="container">
+            <h1 id="FoundChar"></h1>
+        </div>
+        <br>
+        <div class="container">
+            <h1 id="FinalRezult"></h1>
+        </div>
+         <script src = "script.js"></script>
+    </body>
+</html>
