@@ -1,17 +1,18 @@
 let life = 7;
 let word = "";
 let spaces = [];
+let foundedCharacter = 0;
 
-function StartGame() {
+function startGame() {
     word = document.getElementById("Word").value;
     document.getElementById('Lifes-left').innerText = "Lifes left: " + life;
     for (let charact = 0; charact < word.length; ++charact) {    
         spaces[charact] = "_";
     }
-    document.getElementById('FoundChar').innerText = spaces;
+    return (document.getElementById('FoundChar').innerText = spaces);
 }
-let foundedCharacter = 0;
-function SearchChar() {
+
+function searchChar() {
     let found = false;
     let searchCharacter = document.getElementById("Character").value;
     for (let i = 0; i < word.length; ++i) {
@@ -32,7 +33,7 @@ function SearchChar() {
     }
     document.getElementById('Lifes-left').innerText = "Lifes left: " + life;
     document.getElementById('FoundChar').innerText = spaces;
-    clearInput();
+    return (clearInput());
 }
 
 function clearInput(){
